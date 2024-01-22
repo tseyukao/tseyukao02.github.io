@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="JP">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReLAB</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/catalog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--nav-->
+    <div class="navigation">
+      <div class="left-container">
+        <a href="../index.html"> <img src="./IMG/LOGO.png" /> </a>
+      </div>
+      <div class="right-container">
+        <a href="./index.html" class="right-menu" id="about1">About</a>
+        <a href="./catalogp2.html" class="right-menu">Catalog</a>
+        <a href="./shop.html" class="right-menu">Shop</a>
+        <a href="./cart.html" class="right-menu">Cart</a>
+        <a href="#" class="right-menu">EN</a>
+      </div>
+    </div>
+
+    <div
+      class="page-container"
+      id="conts2"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-duration="1000"
+    >
+      <div class="page-content" id="page1">
+        <!-- 左邊文字說明區域的內容 -->
+        <div class="description">
+          <div class="upper-content">
+            <h1>ReLAB EXP.001</h1>
+            <p>
+              ラベルのないペットボトルが、新たなお茶の世界をお届けします。ReLABのお茶は、味覚だけでなく視覚にも楽しみを提供することを目指しています。
+            </p>
+          </div>
+          <div class="dw-content">
+            <div class="infoone">
+              <p class="info1-first">内容量</p>
+              <p class="info1-second">330 ml</p>
+            </div>
+            <div class="infotwo">
+              <p class="info2-first">サイズ</p>
+              <p class="info2-second">6 x 6 x 22cm</p>
+            </div>
+            <div class="price">
+              <p class="price1-first">1本</p>
+              <p class="price1-second">￥ 130</p>
+            </div>
+            <div class="price">
+              <p class="price2-first">1 セット</p>
+              <p class="price2-second">￥ 600</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides2 slide">
+            <img src="./IMG/web2-1.png" />
+            <div class="text2">
+              <p class="jp">紅茶</p>
+              <p class="en">BLACK TEA</p>
+            </div>
+          </div>
+
+          <div class="mySlides2 slide">
+            <img src="./IMG/web2-2.png" />
+            <div class="text2">
+              <p class="jp">烏龍茶</p>
+              <p class="en">OOLONG TEA</p>
+            </div>
+          </div>
+
+          <div class="mySlides2 slide">
+            <img src="./IMG/web2-3.png" />
+            <div class="text2">
+              <p class="jp">麦茶</p>
+              <p class="en">MUGI TEA</p>
+            </div>
+          </div>
+
+          <div class="mySlides2 slide">
+            <img src="./IMG/web2-4.png" />
+            <div class="text2">
+              <p class="jp">ジャスミン茶</p>
+              <p class="en">JASMINE TEA</p>
+            </div>
+          </div>
+
+          <div class="mySlides2 slide">
+            <img src="./IMG/web2-5.png" />
+            <div class="text2">
+              <p class="jp">綠茶</p>
+              <p class="en">GREEN TEA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="button">
+          <span class="circle" id="span1" onclick="changeSlide(1)"></span>
+          <span class="circle" id="span2" onclick="changeSlide(2)"></span>
+          <span class="circle" id="span3" onclick="changeSlide(3)"></span>
+          <span class="circle" id="span4" onclick="changeSlide(4)"></span>
+          <span class="circle" id="span5" onclick="changeSlide(5)"></span>
+        </div>
+
+        <!-- button 
+      <div class="button-container">
+        <div>
+          <button id="button1"></button>
+          <button id="button2"></button>
+          <button id="button3"></button>
+          <button id="button4"></button>
+          <button id="button5"></button>
+        </div>
+      </div>-->
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides2");
+        let dots = document.getElementsByClassName("circle");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+
+      function changeSlide(n) {
+        showSlides((slideIndex = n));
+      }
+    </script>
+    <script src="./js/scroll2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="JP">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReLAB</title>
+    <link rel="icon" type="image/x-icon" href="./IMG/favicon.png" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/regi.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--nav-->
+    <div class="navigation">
+      <a href="../index.html"> <img src="./IMG/LOGO.png" /> </a>
+    </div>
+    <div class="background-space">
+      <p class="selectnote">配送・支払い情報などのご指定をお願いいたします。</p>
+
+      <div class="accordion" id="accordion1">
+        <div class="accordion-label" onclick="toggleAccordion('accordion1')">
+          <p class="accordion-left-word">カートの内容</p>
+          <p class="accordion-right-word">￥1200</p>
+          <img src="./IMG/expand_more_FILL0_wght400_GRAD0_opsz24.png" />
+        </div>
+        <div class="accordion-content">
+          <div class="shopimg">
+            <div class="shop-left-01">
+              <img src="./IMG/web2-1-2.png" class="acc-drop-left" />
+              <div class="acc-drop-right">
+                <p class="expnum">ReLAB EXP.001 ・</p>
+                <p class="expname">烏龍茶</p>
+                <div class="down-text">
+                  <div class="price">
+                    <p class="roma">180</p>
+                    <p class="enfont">円</p>
+                  </div>
+                  <div class="quantity">
+                    <p class="quanjp">数量：</p>
+                    <p class="quanroma">1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shopimg">
+            <div class="shop-left-01">
+              <img src="./IMG/web2-1-3.png" class="acc-drop-left" />
+              <div class="acc-drop-right">
+                <p class="expnum">ReLAB EXP.001 ・</p>
+                <p class="expname">むぎ茶</p>
+                <div class="down-text">
+                  <div class="price">
+                    <p class="roma">180</p>
+                    <p class="enfont">円</p>
+                  </div>
+                  <div class="quantity">
+                    <p class="quanjp">数量：</p>
+                    <p class="quanroma">1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shopimg">
+            <div class="shop-left">
+              <img src="./IMG/web2-5.png" class="acc-drop-left" />
+              <div class="acc-drop-right">
+                <p class="expnum">ReLAB EXP.002 ・</p>
+                <p class="expname">緑茶</p>
+                <div class="down-text">
+                  <div class="price">
+                    <p class="roma">540</p>
+                    <p class="enfont">円</p>
+                  </div>
+                  <div class="quantity">
+                    <p class="quanjp">数量：</p>
+                    <p class="quanroma">3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="address">
+        <div class="cusumor">
+          <h1>お届け先</h1>
+          <div class="title-placeholder">
+            <p class="sec-title">お名前</p>
+            <input type="text" />
+          </div>
+          <div class="title-placeholder">
+            <p class="sec-title">フリガナ</p>
+            <input type="text" />
+          </div>
+          <div class="title-placeholder-post">
+            <!-- ▼郵便番号入力フィールド(7桁) -->
+            <p>郵便番号(7桁)</p>
+            <input
+              type="text"
+              name="zip11"
+              onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');"
+            />
+          </div>
+          <div class="title-placeholder-postadd">
+            <!-- ▼住所入力フィールド(都道府県+以降の住所) -->
+            <input type="text" name="addr11" />
+          </div>
+          <div class="title-placeholder">
+            <p class="sec-title">住所1</p>
+            <input type="text" />
+          </div>
+          <div class="title-placeholder">
+            <p class="sec-title">住所2</p>
+            <input type="text" />
+          </div>
+          <div class="title-placeholder">
+            <p class="sec-title">電話番号</p>
+            <input type="text" />
+          </div>
+          <div class="title-placeholder">
+            <p class="sec-title">メールアドレス</p>
+            <input type="text" />
+          </div>
+        </div>
+      </div>
+
+      <div class="address-time">
+        <h1>お届け希望日・時間帯</h1>
+        <div class="expect-date">
+          <label for="days">希望日</label><br />
+          <select id="weekDatesSelect">
+            <option value="specified">指定なし</option>
+          </select>
+        </div>
+        <div class="expect-time">
+          <label for="time">時間帯</label><br />
+          <select name="time" id="time">
+            <option>指定なし</option>
+            <option>午前</option>
+            <option>午後</option>
+            <option>夜間</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="pay">
+        <h1>お支払い方法</h1>
+        <div class="accordion2" id="accordion2">
+          <div class="accordion-label" onclick="toggleAccordion('accordion2')">
+            お選びください
+          </div>
+          <div class="accordion-content two">
+            <div class="credit">
+              <span>
+                <input
+                  type="radio"
+                  id="pay-method-credit"
+                  name="payment-method"
+                  value="credit"
+                />
+                <label for="pay-method-credit">
+                  <span class="pay-method-word"
+                    >クレジットカード決済（1回）</span
+                  >
+                </label>
+                <div class="card-number">
+                  <label for="cardnum">カード番号</label><br />
+                  <input type="placeholder" />
+                </div>
+                <div class="credit-date">
+                  <div class="month">
+                    <select name="time" id="time">
+                      <option>月</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="year">
+                    <select name="time" id="time">
+                      <option>年</option>
+                      <option>24</option>
+                      <option>25</option>
+                      <option>26</option>
+                      <option>27</option>
+                      <option>28</option>
+                      <option>29</option>
+                      <option>30</option>
+                      <option>31</option>
+                      <option>32</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="card-name-code">
+                  <div class="card-name">
+                    <label for="cardname">カード名義</label><br />
+                    <input type="text" placeholder="TARO YAMADA" />
+                  </div>
+                  <div class="card-code">
+                    <label for="cardcode">セキュリティコード</label><br />
+                    <input type="text" placeholder="123" />
+                  </div>
+                </div>
+              </span>
+              <div class="afterpay">
+                <span>
+                  <input
+                    type="radio"
+                    id="pay-method-after"
+                    name="payment-method"
+                    value="after"
+                  />
+                  <label for="pay-method-after">
+                    <span class="pay-method-word"
+                      >後払い（コンビニ・銀行・郵便局）</span
+                    >
+                  </label>
+                </span>
+              </div>
+              <div class="trans">
+                <span>
+                  <input
+                    type="radio"
+                    id="pay-method-trans"
+                    name="payment-method"
+                    value="trans"
+                  />
+                  <label for="pay-method-trans">
+                    <span class="pay-method-word">銀行振込</span>
+                  </label>
+                </span>
+              </div>
+              <div class="credit-button">
+                <button class="detail">この方法で支払い</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gift">
+        <h1>セット·ギフト</h1>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" />
+            <span class="custom-checkbox"></span>
+            <p class="label-text">セットの箱詰め（手数料0円）</p>
+          </label>
+        </div>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" />
+            <span class="custom-checkbox"></span>
+            <p class="label-text">ギフトラッピング（手数料440円）</p>
+          </label>
+        </div>
+        <div>
+          <label class="checkbox">
+            <input type="checkbox" checked="checked" />
+            <span class="custom-checkbox"></span>
+            <p class="label-text">メッセージカード（手数料50円）</p>
+          </label>
+        </div>
+      </div>
+
+      <div class="bottom-button">
+        <div class="bottom-button-detail">
+          <button>ご注文の確認へ</button>
+        </div>
+        <div class="bottom-button-a">
+          <a href="./cart.html">↽戻る</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      function toggleAccordion(id) {
+        const accordion = document.getElementById(id);
+        accordion.classList.toggle("active");
+        const content = accordion.querySelector(".accordion-content");
+        content.style.maxHeight = content.style.maxHeight
+          ? null
+          : content.scrollHeight + "px";
+      }
+    </script>
+    <script>
+      function toggleAccordion(id) {
+        const accordion = document.getElementById(id);
+        accordion.classList.toggle("active");
+        const content = accordion.querySelector(".accordion-content");
+        content.style.maxHeight = content.style.maxHeight
+          ? null
+          : content.scrollHeight + "px";
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 取得目前日期
+        const currentDate = new Date();
+
+        // 取得後天日期
+        const twoDaysLater = new Date(currentDate);
+        twoDaysLater.setDate(currentDate.getDate() + 3);
+
+        // 取得後天到其後的 7 天日期資料
+        const nextSevenDays = getNextSevenDays(twoDaysLater);
+
+        // 取得 select 元素
+        const selectElement = document.getElementById("weekDatesSelect");
+
+        // 將日期資料動態添加到 select 中
+        nextSevenDays.forEach((date) => {
+          const option = document.createElement("option");
+          option.value = date.toISOString().split("T")[0]; // 將日期轉換為 ISO 格式
+          option.text = formatDate(date);
+          selectElement.add(option);
+        });
+      });
+
+      // 函數：取得後天到其後的 7 天日期資料
+      function getNextSevenDays(startDate) {
+        const nextSevenDays = [];
+        for (let i = 0; i < 7; i++) {
+          const date = new Date(startDate);
+          date.setDate(startDate.getDate() + i);
+          nextSevenDays.push(date);
+        }
+        return nextSevenDays;
+      }
+
+      // 函數：格式化日期（例如：2024-01-25）
+      function formatDate(date) {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+      }
+    </script>
+    <script
+      src="https://ajaxzip3.github.io/ajaxzip3.js"
+      charset="UTF-8"
+    ></script>
+  </body>
+</html>

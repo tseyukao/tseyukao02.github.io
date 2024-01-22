@@ -1,0 +1,401 @@
+body {
+  background: #eceeee;
+  background-image: url(../IMG/footer.png);
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.exp001,
+.exp002 {
+  margin-top: 100px;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.exp002 {
+  margin-top: 180px;
+  margin-bottom: 220px;
+}
+
+body {
+  background-color: #eceeee;
+}
+
+/* nav */
+.navigation {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  background-color: #eceeee;
+
+  top: 0;
+  z-index: 3; /* 将导航栏的堆叠顺序提高，使其位于第二页上方 */
+}
+
+.left-container {
+  width: 50%;
+  padding-left: 7%;
+}
+
+.left-container img {
+  width: 30%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.right-container {
+  width: 50%;
+  text-align: right;
+  padding-right: 7%;
+}
+
+.right-container a {
+  width: 15%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #2d2d2d;
+  font-size: 20px;
+  text-align: right;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+#about1 {
+  margin-right: 3%;
+}
+
+.page-content {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+.page-container {
+  margin-bottom: 400px;
+}
+
+/*左側圖片*/
+.img-container {
+  width: 28%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.img-container img {
+  width: 44%;
+}
+
+/*中間文字*/
+.mid-container {
+  width: 35%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mid-container h {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.infoone,
+.price {
+  margin-bottom: 15px;
+}
+
+.infotwo {
+  margin-bottom: 48px;
+}
+
+.info1-first,
+.info2-first,
+.price1-first,
+.price2-first {
+  width: 16%;
+  text-align-last: left;
+  margin-right: 7%;
+}
+
+.info1-second,
+.info2-second,
+.price1-second,
+.price2-second {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.info1-first,
+.info1-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info2-first,
+.info2-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price1-first,
+.price1-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price2-first,
+.price2-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dw-content {
+  margin-top: 295px;
+}
+
+.dw-content-exp002 {
+  margin-top: 180px;
+}
+
+.info1-first p {
+  width: 20%;
+  text-align: left;
+  line-height: 2.5;
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+/*右側內容*/
+.rt-container {
+  width: 30%;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-left: 10%;
+}
+
+label {
+  font-size: 16px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  margin-bottom: 12px;
+}
+
+.lable {
+  font-size: 16px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  margin-bottom: 12px;
+  margin-top: 25px;
+}
+
+select:focus {
+  outline: none; /* 移除选择框的焦点样式 */
+}
+
+/* 针对不同浏览器的选择框样式 */
+select::-moz-focus-inner {
+  border: 0;
+}
+
+select::-webkit-inner-spin-button,
+select::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* 移除 WebKit 浏览器中的旋转按钮 */
+  margin: 0;
+}
+
+select {
+  font-size: 16px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  appearance: none; /* 取消默认样式 */
+  background-image: url(../IMG/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 97%;
+  width: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4%;
+  text-align: center;
+  letter-spacing: 10px;
+  background-color: #eceeee;
+  border: solid 1px #2d2d2d;
+}
+
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+
+.input-group input[type="button"] {
+  background-color: #eeeeee;
+  min-width: 30px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 30px;
+  padding: 0;
+  width: 30px;
+  position: relative;
+  border: solid 1px #2d2d2d;
+}
+
+.input-group .quantity-field {
+  position: relative;
+  height: 30px;
+  text-align: center;
+  width: 71%;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+  border: solid 1px #2d2d2d;
+  background-color: #eceeee;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+  color: #8c9792;
+  background-color: #eceeee;
+}
+
+.button-plus {
+  left: -13px;
+}
+
+.input {
+  border: 0;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 90%;
+  height: 34px;
+  font-size: 16px;
+  font-family: "GenWanMin JP", "Times New Roman", serif;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  padding-bottom: 9px;
+  padding-left: 26%;
+}
+
+.input:hover {
+  color: #8c9792;
+  background-color: #fff;
+  border: 1px #8c9792 solid;
+}
+
+.input:active {
+  color: #8c9792;
+  background-color: #8c9792;
+  color: #fff;
+}
+
+.img-container2 {
+  width: 28%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.img-container2 img {
+  width: 60%;
+}
+
+.footer {
+  width: 84%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer img {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 72%;
+}
+
+#tea-image1,
+#tea-image2,
+#tea-image3,
+#tea-image4,
+#tea-image5 {
+  margin-top: 55px;
+  margin-left: 5.5%;
+  animation: fadeIn 1s ease forwards, fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tea2-image1,
+#tea2-image2,
+#tea2-image3,
+#tea2-image4,
+#tea2-image5 {
+  width: 60%;
+  margin-top: 55px;
+  margin-left: 5.5%;
+  animation: fadeIn 1s ease forwards, fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

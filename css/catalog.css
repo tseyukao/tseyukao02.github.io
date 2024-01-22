@@ -1,0 +1,430 @@
+body {
+  background: #eceeee;
+  background-image: url(../IMG/footer.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
+/*nav*/
+.navigation {
+  width: 85%;
+  display: flex;
+  margin: auto;
+}
+
+.left-container {
+  width: 50%;
+}
+
+.left-container img {
+  width: 30%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.right-container {
+  width: 50%;
+  text-align: right;
+}
+
+.right-container a {
+  width: 15%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #2d2d2d;
+  font-size: 20px;
+  text-align: right;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+#about1 {
+  margin-right: 3%;
+}
+
+.page-content {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+#page1 {
+  margin-bottom: 150px;
+}
+
+#page2 {
+  margin-bottom: 120px;
+}
+
+/* 左邊文字說明區域的樣式 */
+.description {
+  display: inline-block;
+  width: 25%;
+}
+
+.upper-content {
+  margin-bottom: 135px;
+  margin-top: 5px;
+}
+
+.upper-content h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.upper-content p {
+  width: 99%;
+  text-align: left;
+  line-height: 2.5;
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: 1px;
+  margin-top: 75px;
+}
+
+.infoone,
+.price {
+  margin-bottom: 20px;
+}
+
+.infotwo {
+  margin-bottom: 55px;
+}
+
+.info1-first,
+.info2-first,
+.price1-first,
+.price2-first {
+  width: 16%;
+  text-align-last: left;
+  margin-right: 18%;
+}
+
+.info1-second,
+.info2-second,
+.price1-second,
+.price2-second {
+  letter-spacing: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.info1-first,
+.info1-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.info2-first,
+.info2-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price1-first,
+.price1-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.price2-first,
+.price2-second {
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.first,
+.second {
+  text-align: left;
+  width: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  background-image: url(../IMG/background_circle.png);
+  background-repeat: no-repeat;
+  background-size: 53%;
+  background-position: 49% 0px;
+  /* opacity: 0; */
+  /* animation: fadeIn 1200ms ease forwards; */
+}
+/* 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+.mySlides2 slide {
+  overflow: hidden;
+}
+
+.mySlides img {
+  width: 65%;
+  margin-top: 55px;
+  margin-left: 5.5%;
+  animation: fadeIn 1s ease forwards, fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button {
+  width: 4.5%;
+  display: inline-block;
+  margin-top: 10px;
+  background-image: url(../IMG/Line\ 10.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: 10%;
+  margin-left: 9%;
+}
+
+.circle,
+.circle2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 5px #fff;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  vertical-align: bottom;
+}
+
+.text {
+  display: inline-block;
+}
+
+.mySlides p {
+  writing-mode: vertical-lr;
+  display: inline-block;
+  vertical-align: middle;
+  text-align-last: left;
+  height: 150px;
+}
+
+.jp {
+  font-size: 20px;
+}
+
+.en {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.circle:hover,
+.circle2:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 5px #a9bbbc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+#span1 {
+  background-color: #a83d22;
+}
+
+#span2 {
+  background-color: #ad5935;
+}
+#span3 {
+  background-color: #c0a163;
+}
+#span4 {
+  background-color: #d3e0ad;
+}
+#span5 {
+  background-color: #aebf7c;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* .page-content {
+  position: relative;
+  overflow: hidden;
+} */
+
+.page2 {
+  position: absolute;
+  top: 199px; /* 将第二页内容向下偏移导航栏的高度 */
+  left: 8%;
+  width: 84%;
+  background-color: #eceeee;
+  z-index: 2;
+  opacity: 0; /* 初始状态为隐藏 */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page1 {
+  position: absolute;
+  top: 190px; /* 将第一页内容向下偏移导航栏的高度 */
+  background-color: #eceeee;
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.page2.active {
+  opacity: 1; /* 显示第二页内容 */
+}
+
+.mySlides2 img {
+  width: 40%;
+  margin-top: 150px;
+  margin-left: 17.5%;
+  animation: fadeIn 1s ease forwards, fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.text .jp {
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.text .en {
+  font-weight: 500;
+}
+
+.text2 .jp {
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.text2 .en {
+  font-weight: 500;
+}
+
+#jasmine-jp {
+  letter-spacing: 0;
+}
+
+#fv {
+  opacity: 0;
+  animation-delay: 700ms;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text2 {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 13%;
+}
+
+.mySlides2 p {
+  writing-mode: vertical-lr;
+  display: inline-block;
+  vertical-align: middle;
+  text-align-last: left;
+  height: 128px;
+}
+
+.circle:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 5px #a9bbbc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.circle2:hover {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 5px #a9bbbc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.circle2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 5px #fff;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  vertical-align: bottom;
+}
+
+.footer {
+  width: 84%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer img {
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 72%;
+}

@@ -1,0 +1,179 @@
+body {
+  background: #eceeee;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+p {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
+
+/*nav*/
+.navigation {
+  width: 85%;
+  display: flex;
+  margin: auto;
+}
+.left-container {
+  width: 50%;
+}
+
+.left-container img {
+  width: 30%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.right-container {
+  width: 50%;
+  text-align: right;
+}
+
+.right-container a {
+  width: 15%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #2d2d2d;
+  font-size: 20px;
+  text-align: right;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+#about1 {
+  margin-right: 3%;
+}
+
+.first-view-mv {
+  width: 85%;
+  margin: 0 auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.catch-copy {
+  font-size: 32px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  font-weight: 900;
+  letter-spacing: 8px;
+  animation: fadeIn 2s ease;
+}
+
+.brand-sec-copy {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 99%;
+  margin-top: 10px;
+  margin-bottom: 45px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 1s;
+}
+.a-dot {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    -45deg,
+    #bf3030,
+    #e6794b,
+    #e2b863,
+    #d3e0ad,
+    #71b15c
+  );
+  background-size: 400% 400%;
+  opacity: 0;
+  animation: gradient 12s ease infinite, rotate 7s linear infinite,
+    fadeIn 2s ease forwards;
+
+  filter: blur(5px);
+
+  /* background-size: 130vmax 130vmax, 80vmax 80vmax, 90vmax 90vmax,
+    110vmax 110vmax, 90vmax 90vmax; */
+}
+
+/* .first-view-mv img {
+  margin-top: 40px;
+}
+
+.first-view-mv img :hover {
+  margin-top: 40px;
+  color: #d9d9d9;
+} */
+
+#first-view-arrow {
+  width: 40px;
+  margin-top: 40px;
+  stroke: #2d2d2d;
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+#first-view-arrow :hover {
+  stroke: #9db2b3;
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 开始和结束时完全透明 */
+  }
+  100% {
+    opacity: 1; /* 动画中间时完全不透明 */
+  }
+}
+
+.a-dot:hover {
+  opacity: 1;
+  animation: gradient 12s ease infinite, rotate 7s linear infinite,
+    scale 0.5s ease forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  to {
+    transform: scale(0.95);
+  }
+}

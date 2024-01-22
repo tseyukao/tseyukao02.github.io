@@ -1,0 +1,698 @@
+.title-placeholder-post input:focus,
+.title-placeholder-postadd input:focus {
+  outline: none;
+}
+.title-placeholder-post input:focus,
+.title-placeholder-postadd input:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.title-placeholder input:focus {
+  outline: none;
+}
+.title-placeholder input:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.card-number input:focus {
+  outline: none;
+}
+.card-number input:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.year select:focus,
+.month select:focus {
+  outline: none;
+}
+
+.year select:focus,
+.month select:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.card-name input:focus {
+  outline: none;
+}
+.card-name input:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.card-code input:focus {
+  outline: none;
+}
+.card-code input:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+body {
+  background: #eceeee;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
+
+/*nav*/
+.navigation {
+  background-color: #fff;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.navigation img {
+  width: 20%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.background-space {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+
+.selectnote {
+  padding: 0 20%;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordion-label img {
+  width: 3%;
+  margin-left: 1%;
+}
+
+.accordion-left-word,
+.accordion-right-word {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.accordion-right-word {
+  margin-left: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.accordion-label {
+  padding: 16px 4%;
+  cursor: pointer;
+  position: relative;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 20%;
+}
+
+.accordion:before,
+.accordion:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-out;
+}
+
+.accordion:before {
+  margin-left: -15px;
+}
+
+.accordion:after {
+  margin-left: 15px;
+}
+
+.accordion.active {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.accordion.active:before,
+.accordion.active:after {
+  width: 100%;
+  left: 0;
+}
+
+.shopimg {
+  padding: 30px 5%;
+}
+
+.shop-left img {
+  width: 15%;
+}
+
+.acc-drop-left,
+.acc-drop-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.acc-drop-right {
+  margin-left: 7%;
+  width: 77%;
+}
+
+.shop-left-01 img {
+  width: 7%;
+  margin-left: 3%;
+  margin-right: 5%;
+}
+.expnum {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.expnum,
+.expname {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 82px;
+}
+
+.roma,
+.enfont {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.roma,
+.quanroma {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.enfont,
+.quanjp {
+  font-size: 14px;
+  color: #a4a4a4;
+  padding-bottom: 2px;
+}
+
+.price,
+.quantity {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.quanjp,
+.quanroma {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.quantity {
+  margin-left: 67%;
+}
+
+.cusumor {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 18px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.title-placeholder {
+  margin-top: 10px;
+}
+
+.sec-title {
+  margin-bottom: 5px;
+}
+
+.title-placeholder input {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  padding-left: 2%;
+  font-size: 18px;
+  width: 100%;
+}
+
+.title-placeholder-post {
+  width: 32%;
+}
+
+.title-placeholder-postadd {
+  width: 63%;
+  margin-left: 4%;
+}
+
+.title-placeholder-post,
+.title-placeholder-postadd {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 10px;
+}
+
+.title-placeholder-post input {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  padding-left: 2%;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.title-placeholder-postadd input {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  padding-left: 2%;
+  font-size: 18px;
+  width: 100%;
+}
+
+.address-time {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.expect-date,
+.expect-time {
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 49.5%;
+}
+
+.expect-date select {
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 3%;
+}
+
+.expect-time select {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 3%;
+}
+
+.expect-time {
+  padding-left: 5%;
+}
+
+.expect-date select,
+.expect-time select {
+  -webkit-appearance: none; /* 隱藏瀏覽器默認的箭頭 */
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 20px; /* 設定右側 padding 以便留出空間放置自訂箭頭 */
+  background-image: url(../IMG/expand_more_FILL0_wght400_GRAD0_opsz24.png); /* 設定自訂箭頭的圖片 */
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 4%;
+  background-position: 96%;
+  border: #a4a4a4 solid 1px;
+}
+
+.expect-date select:focus,
+.expect-time select:focus {
+  outline: none;
+}
+
+.expect-date select:focus,
+.expect-time select:focus {
+  border: 2px solid #a9bbbc !important;
+}
+
+.expect-date,
+.expect-time {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
+
+.pay {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.address {
+  margin-bottom: 50px;
+}
+
+.accordion-content.two {
+  padding: 0;
+}
+
+.accordion2 .accordion-label {
+  width: 100%;
+  background-color: #fff;
+  border: #a4a4a4 solid 1px;
+  background-image: url(../IMG/expand_more_FILL0_wght400_GRAD0_opsz24.png); /* 設定自訂箭頭的圖片 */
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 1.8%;
+  background-position: 98%;
+  font-family: "GenWanMin JP", "Times New Roman", serif;
+  letter-spacing: 1px;
+}
+
+.credit {
+  margin-top: 20px;
+}
+
+.pay-method-word {
+  font-size: 18px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.card-number label {
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.card-number {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  font-size: 16px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-number input {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  padding-left: 2%;
+  font-size: 18px;
+  width: 100%;
+}
+
+.month {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.year select,
+.month select {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  padding-left: 2%;
+  font-size: 18px;
+  width: 100%;
+  -webkit-appearance: none; /* 隱藏瀏覽器默認的箭頭 */
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 20px; /* 設定右側 padding 以便留出空間放置自訂箭頭 */
+  background-image: url(../IMG/expand_more_FILL0_wght400_GRAD0_opsz24.png); /* 設定自訂箭頭的圖片 */
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: 4%;
+  background-position: 96%;
+  border: #a4a4a4 solid 1px;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding-left: 5%;
+}
+
+.year {
+  padding-left: 5%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.year select {
+  width: 100%;
+}
+
+.card-name-code {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.credit-date {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card-name {
+  width: 44%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-name input,
+.card-code input {
+  height: 50px;
+  border-radius: 5px;
+  border: #a4a4a4 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5%;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  color: #2d2d2d;
+}
+
+::placeholder {
+  color: #d9d9d9;
+}
+
+.card-code {
+  width: 45%;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10%;
+}
+
+.card-name label,
+.card-code label {
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.afterpay,
+.trans {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.credit-button {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.credit-button button {
+  border: 0;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 38px;
+  font-size: 14px;
+  font-family: "GenWanMin JP", "Times New Roman", serif;
+  letter-spacing: 2px;
+  padding: 0;
+  width: 100%;
+}
+
+.credit-button button:hover {
+  color: #9db2b3;
+  background-color: #fff;
+  border: 2px #9db2b3 solid;
+}
+
+.credit-button button:active {
+  color: #9db2b3;
+  background-color: #9db2b3;
+  color: #fff;
+}
+
+.gift {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox .custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background: url("../IMG/check_FILL0_wght400_GRAD0_opsz24.png") no-repeat; /* 換成你的圖片 URL */
+  background-size: cover;
+  border: 2px solid; /* 框的顏色 */
+  border-radius: 3px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border-color: #9db2b3; /* 選擇時的框的顏色 */
+}
+
+.checkbox input:checked + .custom-checkbox {
+  background: url("your-checked-image-url.png") no-repeat; /* 換成你的已選取狀態的圖片 URL */
+  background-size: cover;
+  border: 2px solid;
+  border-color: #d9d9d9; /* 選擇時的框的顏色 */
+}
+
+.checkbox .label-text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bottom-button {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bottom-button-detail {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bottom-button button {
+  border: 0;
+  background-color: #d9d9d9;
+  color: #2d2d2d;
+  border-radius: 30px;
+  cursor: pointer;
+  height: 38px;
+  font-size: 16px;
+  font-family: "GenWanMin JP", "Times New Roman", serif;
+  letter-spacing: 2px;
+  padding: 0;
+  width: 100%;
+  font-weight: 800;
+}
+
+.bottom-button button:hover {
+  color: #9db2b3;
+  background-color: #fff;
+  border: 2px #9db2b3 solid;
+}
+
+.bottom-button button:active {
+  color: #9db2b3;
+  background-color: #9db2b3;
+  color: #fff;
+}
+
+.bottom-button a {
+  color: #a4a4a4;
+  font-family: "GenWanMin JP", "Times New Roman", serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.bottom-button-a {
+  width: 8%;
+  margin: 0 auto;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* 自訂radio button的外框 */
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px; /* 調整外框和標籤之間的距離 */
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+}
+
+/* 自訂radio button的外框的外觀 */
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9db2b3; /* 未選擇時的邊框顏色 */
+  background-color: #fff; /* 未選擇時的背景顏色 */
+  border-radius: 50%;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* 當radio被選擇時，修改外框的外觀 */
+input[type="radio"]:checked + label::before {
+  background-color: #9db2b3; /* 選擇時的背景顏色 */
+  border-color: #2d2d2d; /* 選擇時的邊框顏色 */
+}
+
+/* 自訂radio button的標籤的樣式 */
+.pay-method-word {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "GenWanMin JP", "Microsoft JhengHei", serif;
+}
